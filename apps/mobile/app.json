@@ -1,0 +1,54 @@
+{
+  "expo": {
+    "name": "UncStats",
+    "slug": "uncstats",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "scheme": "uncstats",
+    "newArchEnabled": false,
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#F4F4F0"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.uncstats.app",
+      "infoPlist": {
+        "NSFamilyControlsUsageDescription": "UncStats measures Instagram Screen Time thresholds to estimate Reels doomscrolling for your Official Unc Audit.",
+        "UIBackgroundModes": ["processing"]
+      },
+      "entitlements": {
+        "com.apple.developer.family-controls": true,
+        "com.apple.security.application-groups": ["group.com.uncstats.app"]
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#111111"
+      },
+      "package": "com.uncstats.app",
+      "permissions": [
+        "android.permission.BIND_ACCESSIBILITY_SERVICE",
+        "android.permission.SYSTEM_ALERT_WINDOW",
+        "android.permission.FOREGROUND_SERVICE",
+        "android.permission.INTERNET"
+      ]
+    },
+    "plugins": [
+      "expo-font",
+      "./plugins/withUncAccessibility",
+      "./plugins/withUncScreenTime"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "uncstats-mvp"
+      },
+      "supabaseUrl": "",
+      "supabaseAnonKey": ""
+    }
+  }
+}

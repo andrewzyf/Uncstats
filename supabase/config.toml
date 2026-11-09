@@ -1,0 +1,13 @@
+# Minimal Supabase local config for UncStats
+project_id = "uncstats"
+
+[api]
+enabled = true
+port = 54321
+
+[db]
+port = 54322
+major_version = 15
+
+[realtime]
+enabled = true

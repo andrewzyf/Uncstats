@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --paper: #f4f4f0;
+  --ink: #111111;
+  --warning: #ff4f00;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "JetBrains Mono", "Space Mono", ui-monospace, monospace;
+  background:
+    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(255, 79, 0, 0.08), transparent 55%),
+    linear-gradient(180deg, #f4f4f0 0%, #ebebe4 100%);
+  color: var(--ink);
+}
+
+::selection {
+  background: #ff4f00;
+  color: #f4f4f0;
+}
