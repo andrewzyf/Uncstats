@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">UncStats</string>
+    <string name="unc_accessibility_service_description">UncStats monitors Instagram Reels scroll, like, comment, and share events to produce your Official Unc Audit. Telemetry is limited to com.instagram.android.</string>
+    <string name="unc_accessibility_service_label">UncStats Telemetry</string>
+</resources>
